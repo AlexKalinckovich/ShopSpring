@@ -1,0 +1,7 @@
+package springShopApp.Shop.exceptions;
+
+public class AlreadyExistsException extends RuntimeException {
+    public AlreadyExistsException(String message) {
+        super(message);
+    }
+}
