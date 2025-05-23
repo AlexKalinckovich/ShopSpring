@@ -1,6 +1,7 @@
 package springShopApp.Shop.service.category;
 
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import springShopApp.Shop.exceptions.AlreadyExistsException;
 import springShopApp.Shop.exceptions.ResourceNotFoundException;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class CategoryService implements ICategoryService {
 
     private final CategoryRepository categoryRepository;
